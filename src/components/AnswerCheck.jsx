@@ -10,7 +10,7 @@ export default function AnswerCheck(props) {
 
     const styles = {
         backgroundColor: isItCorrect ? "#94D7A2" : "#F8BCBC",
-        color: isItCorrect ? "#293264" : "#4D5B9E",
+        color: isItCorrect ? "#014d10" : "#4f0606",
         border: "none",
         paddingLeft: 21,
         paddingRight: 21,
@@ -20,6 +20,7 @@ export default function AnswerCheck(props) {
 
     const stylesForOthers = {
         backgroundColor: "#94D7A2",
+        color: "#014d10",
         border: "none",
         paddingLeft: 21,
         paddingRight: 21,
