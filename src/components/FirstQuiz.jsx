@@ -1,5 +1,6 @@
 import blobRight from "../../public/blob.svg"
 import blobLeft from "../../public/second-blob.svg"
+import loading from "../../public/loading.png"
 import { decode } from "html-entities"
 import { useState, useEffect } from "react"
 import Questions from "./Questions"
@@ -111,7 +112,12 @@ export default function FirstQuiz(props) {
                             {questionElements}
                         </div>
                         <button onClick={submitQuiz} className="check-btn">Check answers</button>
-                    </div>)
+                    </div> ||
+                    <div className="loading-screen">
+                        <img className="loading-img" src={loading} />
+                        <h1>Loading...</h1>
+                    </div>
+                )
             }
             <img src={blobRight}  className='blob-right-quiz'/>
             <img src={blobLeft}  className='blob-left-quiz'/>
