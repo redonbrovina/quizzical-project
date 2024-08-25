@@ -113,10 +113,7 @@ main {
   align-items: center;
   gap: 10px;
   margin-top: 200px;
-}
-
-.loading-img {
-  margin-top: 20px;
+  font-size: 10px;
 }
 
 .check-btn {

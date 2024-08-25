@@ -1,11 +1,13 @@
 import blobRight from "../../public/blob.svg"
 import blobLeft from "../../public/second-blob.svg"
-import loading from "../../public/loading.png"
 import { decode } from "html-entities"
 import { useState, useEffect } from "react"
 import Questions from "./Questions"
 import { nanoid } from "nanoid"
 import AnswerCheck from "./AnswerCheck"
+import { ring } from 'ldrs'
+
+ring.register()
 
 export default function FirstQuiz(props) {
 
@@ -114,7 +116,13 @@ export default function FirstQuiz(props) {
                         <button onClick={submitQuiz} className="check-btn">Check answers</button>
                     </div> ||
                     <div className="loading-screen">
-                        <img className="loading-img" src={loading} />
+                        <l-ring
+                            size="40"
+                            stroke="5"
+                            bg-opacity="0"
+                            speed="2" 
+                            color="#293264" 
+                        ></l-ring>
                         <h1>Loading...</h1>
                     </div>
                 )
