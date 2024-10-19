@@ -158,8 +158,6 @@ main {
 }
 
 .answers-sec {
-  border: none;
-  border-bottom: 1px solid #DBDEF0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,4 +223,12 @@ input[type="radio"]:checked+label {
   transition-duration: 0.5s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;
+}
+
+.answers-third {
+  border-bottom: 1px solid #D6DBF5;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+  padding: 7px;
 }

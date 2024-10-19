@@ -35,9 +35,9 @@ export default function AnswerCheck(props) {
     }
 
     return (
-        <div className="questionSet">
+        <div>
             <h1 className="questions">{props.question}</h1>
-            <div>
+            <div className="answers-third">
                 {props.answers.length === 4 
                 ?
                 <div className="answers-sec">
