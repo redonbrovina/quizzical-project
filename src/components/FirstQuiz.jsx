@@ -25,7 +25,7 @@ export default function FirstQuiz(props) {
 
 
     useEffect(() => {
-        fetch("https://opentdb.com/api.php?amount=5&category=9")
+        fetch("https://opentdb.com/api.php?amount=5&category=21")
         .then(res => res.json())
         .then(data => setTriviaDatabase(data))
     }, [])
@@ -109,12 +109,14 @@ export default function FirstQuiz(props) {
 
                     </div> 
                 :
-                (triviaDatabase.results && <div className='quiz-screen'>
+                (
+                (triviaDatabase.results) ? 
+                    <div className='quiz-screen'>
                         <div>
                             {questionElements}
                         </div>
                         <button onClick={submitQuiz} className="check-btn">Check answers</button>
-                    </div> ||
+                    </div> :
                     <div className="loading-screen">
                         <l-ring
                             size="40"
