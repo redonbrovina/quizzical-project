@@ -25,7 +25,7 @@ export default function FirstQuiz(props) {
 
 
     useEffect(() => {
-        fetch("https://opentdb.com/api.php?amount=5&category=21")
+        fetch("https://opentdb.com/api.php?amount=5&category=9")
         .then(res => res.json())
         .then(data => setTriviaDatabase(data))
     }, [])
